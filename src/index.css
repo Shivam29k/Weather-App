@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background-color: rgb(51, 60, 68);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  height: 80%;
+  width: 500px;
+  border-radius: 20px;
+  background-color: rgb(117, 189, 189);
+  box-shadow: 4px 10px 20px #6a4e1e;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+
+
+/* Navbar */
+
+.navbar {
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border: 2px solid black;
+}
+
+.css-b62m3t-container {
+  width: 80%;
+  border-radius: 20px;
+}
+.css-b62m3t-container:hover{
+  border: 2px solid #37d6d1;
+}
+
+.css-b62m3t-container div {
+  border-radius: 20px;
+}
+
+/* Body */
+
+.body {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
