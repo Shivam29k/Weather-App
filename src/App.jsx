@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import Navbar from './Components/Navbar'
 import Home from './Components/Home'
-import Weather from './Components/Weather';
+import Weather from './Components/weather/Weather';
 
 
 function App() {
 
   const [loaction, setLocation] = useState(null)
+  console.log("re-rendering app.......  ")
  
   return (
     <div className='card'>

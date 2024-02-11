@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0%;
   margin: 0%;
+  font-family: 'Quicksand', sans-serif;
 }
 
 body {
-  background-color: rgb(51, 60, 68);
+  background-image: url('./assets/background.png');
+  /* backdrop-filter: blur(2px); */
 }
 
 #root {
@@ -19,7 +23,8 @@ body {
   height: 80%;
   width: 500px;
   border-radius: 20px;
-  background-color: rgb(117, 189, 189);
+  background-color: rgb(117, 189, 189, 0.6);
+  backdrop-filter: blur(15px);
   box-shadow: 4px 10px 20px #6a4e1e;
   display: flex;
   flex-direction: column;
@@ -34,9 +39,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border: 2px solid black;
+  font-weight: 600;
 }
 
 .css-b62m3t-container {
@@ -44,7 +47,7 @@ body {
   border-radius: 20px;
 }
 .css-b62m3t-container:hover{
-  border: 2px solid #37d6d1;
+  border: 4px solid #37d6d1;
 }
 
 .css-b62m3t-container div {
@@ -56,8 +59,172 @@ body {
 .body {
   flex-grow: 1;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.body .location {
+  height: 18%;
+  width: 80%;
+  display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(68, 99, 117, 0.9);
+}
+.body .currentInfo {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Current Temp */
+
+.currentTemp {
+  text-align: center;
+  font-weight: 800;
+  font-size: 4.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-shadow: 4px 4px 8px rgb(32, 67, 87);
+}
+
+.currentTemp p {
+  font-size: 2rem;
+  padding-top: 3.15rem;
+}
+
+/* day min max */
+
+.dayTemp {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(68, 99, 117, 0.8);
+  font-weight: 600;
+}
+
+/* weatherInfo */
+
+.weatherInfo {
+  display: flex;
+  justify-content: center;
+  border-left: 10px solid #446375;
+}
+
+.weatherInfo div {
+  width: 50%;
+  padding: 15px 0px;
+}
+
+.weatherIcon {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30%;
+}
+
+.weatherInfo p:first-of-type{
+  border-bottom: 1px dotted;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+.weatherInfo p {
+  padding-top: 2px;
+}
+
+/* 5 days forecast */
+
+.forecast {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.daysForecast {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  gap: 10px;
+  padding: 10px 0px;
+}
+
+.daysForecast > div {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #446375;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0px 0px 10px #446375;
 }
 
 
+/* fotter */
+
+.fotter {
+  padding: 20px;
+}
+
+/* forecast */
+
+.forecast h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(68, 99, 117);
+}
+
+
+/* loading... */
+
+.loading body{
+  padding: 1em;
+  background: #2B3134;
+  color: #777;
+  text-align: center;
+  font-family: "Gill sans", sans-serif;
+  width: 80%;
+  margin: 0 auto;
+}
+.loading h1{
+  margin: 1em 0;
+  border-bottom: 1px dashed;
+  padding-bottom: 1em;
+  font-weight: lighter;
+}
+.loading p{
+  font-style: italic;
+}
+.loading .loader{
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*
+  Set the color of the icon
+*/
+.loading svg path,
+.loading svg rect{
+  fill: rgb(2, 65, 65);
+}
