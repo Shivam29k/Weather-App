@@ -93,7 +93,7 @@ function Info({ data }) {
             {/* first get current date then make 3 divs based on next 3 dates */}
             <div className="daysForecast">
                 {dates.map((date, index) => {
-                    return <div key={index}>
+                    return <div key={index} className='tile'>
                         <h4>{date}</h4>
                         <p>{data.forecast[`day${index + 1}`].max} °C</p>
                         <p>{data.forecast[`day${index + 1}`].min} °C</p>
