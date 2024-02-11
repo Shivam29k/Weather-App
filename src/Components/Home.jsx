@@ -1,5 +1,5 @@
 import React from 'react'
-import earthGIF from '../assets/earth.gif'
+import earthGIF from '../assets/earth2.gif'
 
 function Home() {
   return (

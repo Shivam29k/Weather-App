@@ -247,7 +247,8 @@ body {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 50px;
+  text-shadow: 2px 2px 4px rgba(68, 99, 117);
 }
 
 .home img {
