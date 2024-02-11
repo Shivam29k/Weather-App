@@ -4,6 +4,8 @@ This project is a weather application built with React. It uses the OpenWeatherM
 
 [Click here to try it out yourself](https://weather-app-shivam.vercel.app/)
 
+### [Follow this thread if you wanna make your own](https://twitter.com/ShivamKrandom/status/1756627245710316016)
+
 ## Project Structure
 
 The project is structured into several components, each responsible for a specific part of the application:
@@ -52,3 +54,8 @@ The project uses several dependencies:
 ## Contributing
 
 Contributions are welcome. Please open an issue or submit a pull request.
+
+
+# Preview
+
+![preview](/src/assets/weather-app.gif)
