@@ -95,8 +95,8 @@ function Info({ data }) {
                 {dates.map((date, index) => {
                     return <div key={index} className='tile'>
                         <h4>{date}</h4>
-                        <p>{data.forecast[`day${index + 1}`].max} °C</p>
-                        <p>{data.forecast[`day${index + 1}`].min} °C</p>
+                        <p>{parseFloat(data.forecast[`day${index + 1}`].max).toFixed(1)} °C</p>
+                        <p>{parseFloat(data.forecast[`day${index + 1}`].min).toFixed(1)} °C</p>
                     </div>
 
                 })}
