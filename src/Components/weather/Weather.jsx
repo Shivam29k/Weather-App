@@ -4,7 +4,7 @@ import { loadWeather } from './weatherAPI';
 function Weather({ location, value }) {
     const [data, setData] = useState(null);
 
-    console.log("re-rendering.......");
+    // console.log("re-rendering.......");
 
 
 
@@ -12,7 +12,7 @@ function Weather({ location, value }) {
         loadWeather(value.lat, value.lon)
             .then(data => {
                 setData(data)
-                console.log(data);
+                // console.log(data);
             })
             .catch(error => {
                 console.error(error);
