@@ -2,6 +2,8 @@
 
 This project is a weather application built with React. It uses the OpenWeatherMap API to fetch weather data based on the user's location.
 
+[Click here to try it out yourself](https://weather-app-shivam.vercel.app/)
+
 ## Project Structure
 
 The project is structured into several components, each responsible for a specific part of the application:
